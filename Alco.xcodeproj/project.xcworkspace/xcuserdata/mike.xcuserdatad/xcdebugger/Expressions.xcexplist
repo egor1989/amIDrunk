@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[PageViewManager loadPages:]:PageViewManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "scrollView_.contentSize">
+            </PersistentString>
+            <PersistentString
+               value = "scrollView_.frame.size.width">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

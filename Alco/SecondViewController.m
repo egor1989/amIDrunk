@@ -17,8 +17,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
-	
 	_progressView.trackImage = [UIImage imageNamed:@"central_redSliderBackground"] ;
 	_progressView.progressImage = [[UIImage imageNamed:@"central_redSliderForeground"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 16, 10, 16) ];
 	[_progressView setProgress:0.8 animated:YES];

@@ -36,7 +36,7 @@
                             <constraint firstAttribute="centerY" secondItem="21" secondAttribute="centerY" type="user" id="yWk-L2-m9F"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="first" id="7"/>
+                    <tabBarItem key="tabBarItem" title="" id="7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,7 +95,7 @@
                             <constraint firstItem="8ru-g1-M5a" firstAttribute="top" secondItem="17" secondAttribute="top" constant="13" id="wwn-Al-E1R"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="second" id="6"/>
+                    <tabBarItem key="tabBarItem" title="" id="6"/>
                     <connections>
                         <outlet property="progressView" destination="r3r-0q-dd4" id="j2J-dm-bo0"/>
                     </connections>
@@ -201,7 +201,7 @@
                                     <constraint firstAttribute="width" constant="87" id="g67-oE-lOP"/>
                                 </constraints>
                             </pageControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6D-4h-Itq"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6D-4h-Itq"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -271,9 +271,7 @@
     <resources>
         <image name="background5.jpg" width="640" height="1136"/>
         <image name="central_redCircle.png" width="16" height="16"/>
-        <image name="first" width="16" height="16"/>
         <image name="navBar.png" width="640" height="92"/>
-        <image name="second" width="16" height="16"/>
         <image name="status_rememberButtonUnselected@2x.png" width="214" height="55"/>
         <image name="status_settingsButton@2x.png" width="58" height="60"/>
         <image name="status_whiteBackground@2x.png" width="592" height="490"/>

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		272481DC175E48CA00358AAF /* CustomPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D4A732175E461A002CDBEC /* CustomPageControl.m */; };
+		272481E0175E681300358AAF /* Page1ForScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272481DE175E681300358AAF /* Page1ForScrollViewController.m */; };
+		272481E1175E681300358AAF /* Page1ForScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 272481DF175E681300358AAF /* Page1ForScrollViewController.xib */; };
+		272481E7175E706B00358AAF /* Page2ForScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272481E3175E703000358AAF /* Page2ForScrollViewController.m */; };
+		272481E8175E707300358AAF /* Page2ForScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 272481E4175E703000358AAF /* Page2ForScrollViewController.xib */; };
 		277D8F25175A09A60032187B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D8F24175A09A60032187B /* UIKit.framework */; };
 		277D8F27175A09A60032187B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D8F26175A09A60032187B /* Foundation.framework */; };
 		277D8F29175A09A60032187B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D8F28175A09A60032187B /* CoreGraphics.framework */; };
@@ -50,6 +54,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		272481DD175E681300358AAF /* Page1ForScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page1ForScrollViewController.h; sourceTree = "<group>"; };
+		272481DE175E681300358AAF /* Page1ForScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page1ForScrollViewController.m; sourceTree = "<group>"; };
+		272481DF175E681300358AAF /* Page1ForScrollViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Page1ForScrollViewController.xib; sourceTree = "<group>"; };
+		272481E2175E703000358AAF /* Page2ForScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Page2ForScrollViewController.h; sourceTree = "<group>"; };
+		272481E3175E703000358AAF /* Page2ForScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Page2ForScrollViewController.m; sourceTree = "<group>"; };
+		272481E4175E703000358AAF /* Page2ForScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Page2ForScrollViewController.xib; sourceTree = "<group>"; };
 		277D8F21175A09A60032187B /* Alco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		277D8F24175A09A60032187B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		277D8F26175A09A60032187B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -124,6 +134,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		272481E5175E703500358AAF /* pagesForScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				272481DD175E681300358AAF /* Page1ForScrollViewController.h */,
+				272481DE175E681300358AAF /* Page1ForScrollViewController.m */,
+				272481DF175E681300358AAF /* Page1ForScrollViewController.xib */,
+				272481E2175E703000358AAF /* Page2ForScrollViewController.h */,
+				272481E3175E703000358AAF /* Page2ForScrollViewController.m */,
+				272481E4175E703000358AAF /* Page2ForScrollViewController.xib */,
+			);
+			name = pagesForScrollView;
+			sourceTree = "<group>";
+		};
+		272481E6175E704100358AAF /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				27D4A731175E461A002CDBEC /* CustomPageControl.h */,
+				27D4A732175E461A002CDBEC /* CustomPageControl.m */,
+				27D4A6FA175E32C0002CDBEC /* PageViewManager.h */,
+				27D4A6FB175E32C0002CDBEC /* PageViewManager.m */,
+			);
+			name = CustomControls;
+			sourceTree = "<group>";
+		};
 		277D8F18175A09A60032187B = {
 			isa = PBXGroup;
 			children = (
@@ -231,10 +265,8 @@
 		27D4A6F7175E32C0002CDBEC /* status */ = {
 			isa = PBXGroup;
 			children = (
-				27D4A731175E461A002CDBEC /* CustomPageControl.h */,
-				27D4A732175E461A002CDBEC /* CustomPageControl.m */,
-				27D4A6FA175E32C0002CDBEC /* PageViewManager.h */,
-				27D4A6FB175E32C0002CDBEC /* PageViewManager.m */,
+				272481E5175E703500358AAF /* pagesForScrollView */,
+				272481E6175E704100358AAF /* CustomControls */,
 				27D4A6FC175E32C0002CDBEC /* StatusViewController.h */,
 				27D4A6FD175E32C0002CDBEC /* StatusViewController.m */,
 			);
@@ -371,6 +403,8 @@
 				27D4A72C175E339F002CDBEC /* status_rememberButtonUnselected@2x.png in Resources */,
 				27D4A72D175E339F002CDBEC /* status_settingsButton@2x.png in Resources */,
 				27D4A72E175E339F002CDBEC /* status_whiteBackground@2x.png in Resources */,
+				272481E1175E681300358AAF /* Page1ForScrollViewController.xib in Resources */,
+				272481E8175E707300358AAF /* Page2ForScrollViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +425,8 @@
 				27D4A6FF175E32C0002CDBEC /* PageViewManager.m in Sources */,
 				27D4A700175E32C0002CDBEC /* StatusViewController.m in Sources */,
 				272481DC175E48CA00358AAF /* CustomPageControl.m in Sources */,
+				272481E0175E681300358AAF /* Page1ForScrollViewController.m in Sources */,
+				272481E7175E706B00358AAF /* Page2ForScrollViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
