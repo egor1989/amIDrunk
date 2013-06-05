@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SVSegmentedControl.h"
 
 @interface HistoryViewController : UIViewController
 

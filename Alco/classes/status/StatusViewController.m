@@ -28,8 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	UIView *page1, *page2;
-    _pageControl.imageNormal = [UIImage imageNamed:@"status_pin.png"];
+	_pageControl.imageNormal = [UIImage imageNamed:@"status_pin.png"];
     _pageControl.imageCurrent = [UIImage imageNamed:@"status_pinSelected.png"];
 	_scrollView.frame = CGRectMake(0, 0, 292, 92);
 	_scrollView.backgroundColor = [UIColor clearColor];

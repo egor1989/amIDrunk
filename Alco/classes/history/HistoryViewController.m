@@ -16,6 +16,42 @@
 
 - (void)viewDidLoad
 {
+	[self tapBarInit];
+	[super viewDidLoad];
+	[self switchInit];
+	
+
+}
+- (void) switchInit{
+	SVSegmentedControl *navSC = [[SVSegmentedControl alloc] initWithSectionTitles:[NSArray arrayWithObjects:
+																			@"           ТАБЛИЦА          ",
+																			@"           ГРАФИК            ",
+																				   nil]];
+	[navSC setBackgroundImage:[UIImage imageNamed:@"history_switchBackground@2x"]];
+	navSC.thumb.backgroundImage = [UIImage imageNamed:@"history_switchActiveBackground@2x"];
+	navSC.thumb.highlightedBackgroundImage = [UIImage imageNamed:@"history_switchActiveBackgroundOpacity@2x"];
+	navSC.height = 44.5;
+
+	navSC.font = [UIFont fontWithName:@"MyriadPro-BoldCond" size:17.0];
+
+	navSC.textShadowColor = [UIColor colorWithRed:255 green:224 blue:201 alpha:0.3];
+	navSC.textColor = [UIColor colorWithWhite:0.0 alpha:0.45];
+	navSC.textShadowOffset = CGSizeMake(0, 1);
+
+	navSC.thumb.textShadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.75];
+	navSC.thumb.textShadowOffset = CGSizeMake(0, 1);
+	
+	navSC.thumbEdgeInset = UIEdgeInsetsMake(4, 4, 6, 4);
+    navSC.changeHandler = ^(NSUInteger newIndex) {
+        NSLog(@"segmentedControl did select index %i (via block handler)", newIndex);
+    };
+    
+	[self.view addSubview:navSC];
+	
+	navSC.center = CGPointMake(160, 75);
+}
+
+-(void) tapBarInit{
 	//инициализация tapBar.
     UIImage *selectedImage0 = [UIImage imageNamed:@"tapbar_historyActive"];
     UIImage *unselectedImage0 = [UIImage imageNamed:@"tapbar_historyInactive"];
@@ -36,8 +72,7 @@
     [item0 setFinishedSelectedImage:selectedImage0 withFinishedUnselectedImage:unselectedImage0];
     [item1 setFinishedSelectedImage:selectedImage1 withFinishedUnselectedImage:unselectedImage1];
     [item2 setFinishedSelectedImage:selectedImage2 withFinishedUnselectedImage:unselectedImage2];
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
 }
 
 - (void)didReceiveMemoryWarning
