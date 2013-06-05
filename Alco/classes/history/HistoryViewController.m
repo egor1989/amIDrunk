@@ -7,6 +7,8 @@
 //
 
 #import "HistoryViewController.h"
+#import <QuartzCore/QuartzCore.h>
+#import "HistoryCell.h"
 
 @interface HistoryViewController ()
 
@@ -18,10 +20,12 @@
 {
 	[self tapBarInit];
 	[super viewDidLoad];
+	[[tableViewGlobal2 layer] setCornerRadius:15];
 	[self switchInit];
 	
 
 }
+
 - (void) switchInit{
 	SVSegmentedControl *navSC = [[SVSegmentedControl alloc] initWithSectionTitles:[NSArray arrayWithObjects:
 																			@"           ТАБЛИЦА          ",
@@ -48,7 +52,7 @@
     
 	[self.view addSubview:navSC];
 	
-	navSC.center = CGPointMake(160, 75);
+	navSC.center = CGPointMake(160, 78);
 }
 
 -(void) tapBarInit{
@@ -75,10 +79,34 @@
 
 }
 
-- (void)didReceiveMemoryWarning
+#pragma mark tableView
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    return 1;    //count of section
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 3;    //count number of row from counting array hear cataGorry is An Array
+}
+
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+		 cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{	
+	HistoryCell *cell = [tableView dequeueReusableCellWithIdentifier:@"historyCell"];
+	cell.promille.text = @"0.372 ‰";
+	cell.place.text = @"Mishka bar";
+	cell.date.text = @"25 июня";
+	cell.time.text = @"23:20";
+//	if (cell == nil)
+//	{
+//		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+//									   reuseIdentifier:@"historyCell"];
+//	}
+	return cell;
 }
 
 @end

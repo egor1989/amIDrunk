@@ -43,10 +43,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="YRR-MM-Izd">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="341" id="AOt-dA-d8j"/>
+                                    <constraint firstAttribute="height" constant="338" id="5f2-fU-UTv"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="62S-9O-XvB">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="historyCell" id="62S-9O-XvB" customClass="HistoryCell">
                                         <rect key="frame" x="0.0" y="22" width="280" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -87,29 +87,39 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="wfn-RM-qmu" firstAttribute="top" secondItem="62S-9O-XvB" secondAttribute="top" constant="6" id="3ab-zo-6kn"/>
+                                            <constraint firstAttribute="bottom" secondItem="49p-Xg-KgT" secondAttribute="bottom" constant="4" id="1qq-7n-cBe"/>
                                             <constraint firstItem="wfn-RM-qmu" firstAttribute="bottom" secondItem="wWk-yy-gqX" secondAttribute="bottom" type="default" id="9aH-dl-4qY"/>
                                             <constraint firstItem="sGz-Ap-HIT" firstAttribute="leading" secondItem="wfn-RM-qmu" secondAttribute="leading" type="default" id="Ckl-V9-R5r"/>
                                             <constraint firstAttribute="trailing" secondItem="wfn-RM-qmu" secondAttribute="trailing" constant="12" id="Hik-Ix-Pg5"/>
                                             <constraint firstItem="sGz-Ap-HIT" firstAttribute="trailing" secondItem="wfn-RM-qmu" secondAttribute="trailing" type="default" id="UpM-UQ-Duh"/>
                                             <constraint firstItem="wWk-yy-gqX" firstAttribute="leading" secondItem="62S-9O-XvB" secondAttribute="leading" constant="20" type="default" id="kAD-f6-BiJ"/>
-                                            <constraint firstItem="sGz-Ap-HIT" firstAttribute="top" secondItem="49p-Xg-KgT" secondAttribute="top" type="default" id="ksh-p6-FWm"/>
                                             <constraint firstItem="49p-Xg-KgT" firstAttribute="leading" secondItem="62S-9O-XvB" secondAttribute="leading" constant="20" type="default" id="ojl-1R-eDS"/>
                                             <constraint firstItem="wfn-RM-qmu" firstAttribute="top" secondItem="wWk-yy-gqX" secondAttribute="top" type="default" id="rH6-K4-jeh"/>
-                                            <constraint firstItem="49p-Xg-KgT" firstAttribute="top" secondItem="62S-9O-XvB" secondAttribute="top" constant="29" id="uAY-vN-mmR"/>
-                                            <constraint firstItem="sGz-Ap-HIT" firstAttribute="baseline" secondItem="49p-Xg-KgT" secondAttribute="baseline" type="default" id="zuy-Ah-cgx"/>
+                                            <constraint firstItem="sGz-Ap-HIT" firstAttribute="baseline" secondItem="49p-Xg-KgT" secondAttribute="baseline" type="default" id="rdb-tV-uWh"/>
+                                            <constraint firstItem="sGz-Ap-HIT" firstAttribute="top" secondItem="49p-Xg-KgT" secondAttribute="top" type="default" id="ryl-IV-Sum"/>
+                                            <constraint firstItem="wWk-yy-gqX" firstAttribute="top" secondItem="62S-9O-XvB" secondAttribute="top" constant="14" id="zwW-A2-DVl"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="date" destination="wfn-RM-qmu" id="7Ul-1s-t0F"/>
+                                            <outlet property="place" destination="49p-Xg-KgT" id="CiZ-ip-8gw"/>
+                                            <outlet property="promille" destination="wWk-yy-gqX" id="IYc-gH-6Qn"/>
+                                            <outlet property="time" destination="sGz-Ap-HIT" id="H3O-Gm-Lyo"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2" id="URF-mA-QRV"/>
+                                    <outlet property="delegate" destination="2" id="kSP-oL-WSt"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="YRR-MM-Izd" firstAttribute="top" secondItem="16" secondAttribute="top" constant="125" id="3EE-cn-2w2"/>
                             <constraint firstItem="U3i-2A-BDs" firstAttribute="top" secondItem="16" secondAttribute="top" constant="13" id="9d3-XH-gr9"/>
                             <constraint firstItem="ucG-V5-0Qz" firstAttribute="centerX" secondItem="U3i-2A-BDs" secondAttribute="centerX" type="default" id="G6x-BX-G8M"/>
                             <constraint firstItem="Avf-J7-x6z" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="X1F-6N-LAm"/>
                             <constraint firstItem="Avf-J7-x6z" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="dZf-BH-1zK"/>
+                            <constraint firstItem="YRR-MM-Izd" firstAttribute="top" secondItem="16" secondAttribute="top" constant="113" id="fWg-5t-gOL"/>
                             <constraint firstItem="ucG-V5-0Qz" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="gf7-qd-cAq"/>
                             <constraint firstItem="Avf-J7-x6z" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="jof-7a-LHq"/>
                             <constraint firstItem="ucG-V5-0Qz" firstAttribute="top" secondItem="16" secondAttribute="top" constant="-1" id="kCF-CJ-PqR"/>
@@ -122,6 +132,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="7"/>
+                    <connections>
+                        <outlet property="tableViewGlobal2" destination="YRR-MM-Izd" id="4uk-yq-rEX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
@@ -361,45 +374,6 @@
         <image name="status_settingsButton@2x.png" width="58" height="60"/>
         <image name="status_whiteBackground@2x.png" width="592" height="490"/>
     </resources>
-    <classes>
-        <class className="BoldCondLabel" superclassName="UILabel">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BoldCondLabel.h"/>
-        </class>
-        <class className="CentralViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CentralViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="progressView" candidateClass="ProgressViewWithOffset"/>
-            </relationships>
-        </class>
-        <class className="CondLabel" superclassName="UILabel">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CondLabel.h"/>
-        </class>
-        <class className="CustomPageControl" superclassName="UIPageControl">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomPageControl.h"/>
-        </class>
-        <class className="HistoryViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HistoryViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ProgressViewWithOffset" superclassName="UIProgressView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProgressViewWithOffset.h"/>
-        </class>
-        <class className="RegularLabel" superclassName="UILabel">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/RegularLabel.h"/>
-        </class>
-        <class className="SemiBoldLabel" superclassName="UILabel">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SemiBoldLabel.h"/>
-        </class>
-        <class className="StatusViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/StatusViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="pageControl" candidateClass="CustomPageControl"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

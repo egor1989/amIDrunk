@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "SVSegmentedControl.h"
 
-@interface HistoryViewController : UIViewController
+@interface HistoryViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>{
+	
+	IBOutlet UITableView *tableViewGlobal2;
+}
 
 @end

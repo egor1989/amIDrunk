@@ -29,6 +29,7 @@
 		2724822A175F774C00358AAF /* history_switchActiveBackgroundOpacity@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27248229175F774C00358AAF /* history_switchActiveBackgroundOpacity@2x.png */; };
 		2724822E175F922100358AAF /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2724822B175F922000358AAF /* MyriadPro-Regular.otf */; };
 		2724822F175F922100358AAF /* RegularLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724822D175F922100358AAF /* RegularLabel.m */; };
+		27248232175FECFE00358AAF /* HistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27248231175FECFE00358AAF /* HistoryCell.m */; };
 		277D8F25175A09A60032187B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D8F24175A09A60032187B /* UIKit.framework */; };
 		277D8F27175A09A60032187B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D8F26175A09A60032187B /* Foundation.framework */; };
 		277D8F29175A09A60032187B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D8F28175A09A60032187B /* CoreGraphics.framework */; };
@@ -95,6 +96,8 @@
 		2724822B175F922000358AAF /* MyriadPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.otf"; sourceTree = "<group>"; };
 		2724822C175F922000358AAF /* RegularLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegularLabel.h; sourceTree = "<group>"; };
 		2724822D175F922100358AAF /* RegularLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegularLabel.m; sourceTree = "<group>"; };
+		27248230175FECFE00358AAF /* HistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryCell.h; sourceTree = "<group>"; };
+		27248231175FECFE00358AAF /* HistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryCell.m; sourceTree = "<group>"; };
 		277D8F21175A09A60032187B /* Alco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		277D8F24175A09A60032187B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		277D8F26175A09A60032187B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -185,6 +188,8 @@
 			children = (
 				272481F6175F5A1F00358AAF /* HistoryViewController.h */,
 				272481F7175F5A1F00358AAF /* HistoryViewController.m */,
+				27248230175FECFE00358AAF /* HistoryCell.h */,
+				27248231175FECFE00358AAF /* HistoryCell.m */,
 			);
 			path = history;
 			sourceTree = "<group>";
@@ -489,6 +494,7 @@
 				27248227175F745600358AAF /* SVSegmentedControl.m in Sources */,
 				27248228175F745600358AAF /* SVSegmentedThumb.m in Sources */,
 				2724822F175F922100358AAF /* RegularLabel.m in Sources */,
+				27248232175FECFE00358AAF /* HistoryCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
