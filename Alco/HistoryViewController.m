@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 peacock. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "HistoryViewController.h"
 
-@interface FirstViewController ()
+@interface HistoryViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation HistoryViewController
 
 - (void)viewDidLoad
 {

@@ -26,8 +26,8 @@
 		277D8F39175A09A60032187B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 277D8F38175A09A60032187B /* Default@2x.png */; };
 		277D8F3B175A09A60032187B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 277D8F3A175A09A60032187B /* Default-568h@2x.png */; };
 		277D8F3E175A09A60032187B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277D8F3C175A09A60032187B /* MainStoryboard.storyboard */; };
-		277D8F41175A09A60032187B /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D8F40175A09A60032187B /* FirstViewController.m */; };
-		277D8F48175A09A60032187B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D8F47175A09A60032187B /* SecondViewController.m */; };
+		277D8F41175A09A60032187B /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D8F40175A09A60032187B /* HistoryViewController.m */; };
+		277D8F48175A09A60032187B /* CentralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D8F47175A09A60032187B /* CentralViewController.m */; };
 		277D8F75175A44160032187B /* MCProgressBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D8F74175A44160032187B /* MCProgressBarView.m */; };
 		277D8F8C175A50F30032187B /* BoldCondLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D8F8A175A50F30032187B /* BoldCondLabel.m */; };
 		277D8F8D175A50F30032187B /* MyriadPro-BoldCond.otf in Resources */ = {isa = PBXBuildFile; fileRef = 277D8F8B175A50F30032187B /* MyriadPro-BoldCond.otf */; };
@@ -72,16 +72,16 @@
 		277D8F2E175A09A60032187B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		277D8F30175A09A60032187B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		277D8F32175A09A60032187B /* Alco-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Alco-Prefix.pch"; sourceTree = "<group>"; };
-		277D8F33175A09A60032187B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		277D8F34175A09A60032187B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		277D8F33175A09A60032187B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		277D8F34175A09A60032187B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
 		277D8F36175A09A60032187B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		277D8F38175A09A60032187B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		277D8F3A175A09A60032187B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		277D8F3D175A09A60032187B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		277D8F3F175A09A60032187B /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		277D8F40175A09A60032187B /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		277D8F46175A09A60032187B /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		277D8F47175A09A60032187B /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		277D8F3F175A09A60032187B /* HistoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		277D8F40175A09A60032187B /* HistoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		277D8F46175A09A60032187B /* CentralViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CentralViewController.h; sourceTree = "<group>"; };
+		277D8F47175A09A60032187B /* CentralViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CentralViewController.m; sourceTree = "<group>"; };
 		277D8F73175A44160032187B /* MCProgressBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCProgressBarView.h; sourceTree = "<group>"; };
 		277D8F74175A44160032187B /* MCProgressBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCProgressBarView.m; sourceTree = "<group>"; };
 		277D8F89175A50F30032187B /* BoldCondLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoldCondLabel.h; sourceTree = "<group>"; };
@@ -162,6 +162,26 @@
 			name = CustomControls;
 			sourceTree = "<group>";
 		};
+		272481ED175F54C900358AAF /* history */ = {
+			isa = PBXGroup;
+			children = (
+				277D8F3F175A09A60032187B /* HistoryViewController.h */,
+				277D8F40175A09A60032187B /* HistoryViewController.m */,
+			);
+			name = history;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		272481EE175F54F500358AAF /* central */ = {
+			isa = PBXGroup;
+			children = (
+				277D8F46175A09A60032187B /* CentralViewController.h */,
+				277D8F47175A09A60032187B /* CentralViewController.m */,
+			);
+			name = central;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		277D8F18175A09A60032187B = {
 			isa = PBXGroup;
 			children = (
@@ -193,13 +213,6 @@
 			isa = PBXGroup;
 			children = (
 				27D4A6F6175E32BF002CDBEC /* classes */,
-				277D8F33175A09A60032187B /* AppDelegate.h */,
-				277D8F34175A09A60032187B /* AppDelegate.m */,
-				277D8F3C175A09A60032187B /* MainStoryboard.storyboard */,
-				277D8F3F175A09A60032187B /* FirstViewController.h */,
-				277D8F40175A09A60032187B /* FirstViewController.m */,
-				277D8F46175A09A60032187B /* SecondViewController.h */,
-				277D8F47175A09A60032187B /* SecondViewController.m */,
 				27D4A701175E339E002CDBEC /* img */,
 				277D8F71175A44160032187B /* lib */,
 				277D8F2B175A09A60032187B /* Supporting Files */,
@@ -261,6 +274,11 @@
 		27D4A6F6175E32BF002CDBEC /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				277D8F33175A09A60032187B /* AppDelegate.h */,
+				277D8F34175A09A60032187B /* AppDelegate.m */,
+				277D8F3C175A09A60032187B /* MainStoryboard.storyboard */,
+				272481ED175F54C900358AAF /* history */,
+				272481EE175F54F500358AAF /* central */,
 				27D4A6F7175E32C0002CDBEC /* status */,
 			);
 			path = classes;
@@ -423,8 +441,8 @@
 			files = (
 				277D8F31175A09A60032187B /* main.m in Sources */,
 				277D8F35175A09A60032187B /* AppDelegate.m in Sources */,
-				277D8F41175A09A60032187B /* FirstViewController.m in Sources */,
-				277D8F48175A09A60032187B /* SecondViewController.m in Sources */,
+				277D8F41175A09A60032187B /* HistoryViewController.m in Sources */,
+				277D8F48175A09A60032187B /* CentralViewController.m in Sources */,
 				277D8F75175A44160032187B /* MCProgressBarView.m in Sources */,
 				277D8F8C175A50F30032187B /* BoldCondLabel.m in Sources */,
 				27D4A6D3175E03CA002CDBEC /* ProgressViewWithOffset.m in Sources */,
@@ -455,6 +473,7 @@
 				277D8F3D175A09A60032187B /* en */,
 			);
 			name = MainStoryboard.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

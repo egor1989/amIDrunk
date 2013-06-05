@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "ProgressViewWithOffset.h"
 
-@interface SecondViewController : UIViewController
+@interface CentralViewController : UIViewController
 @property IBOutlet ProgressViewWithOffset *progressView;
 @end

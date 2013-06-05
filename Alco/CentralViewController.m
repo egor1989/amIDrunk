@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 peacock. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "CentralViewController.h"
 
-@interface SecondViewController ()
+@interface CentralViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation CentralViewController
 
 - (void)viewDidLoad
 {
