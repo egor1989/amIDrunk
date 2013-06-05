@@ -12,6 +12,10 @@
 		272481E1175E681300358AAF /* Page1ForScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 272481DF175E681300358AAF /* Page1ForScrollViewController.xib */; };
 		272481E7175E706B00358AAF /* Page2ForScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272481E3175E703000358AAF /* Page2ForScrollViewController.m */; };
 		272481E8175E707300358AAF /* Page2ForScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 272481E4175E703000358AAF /* Page2ForScrollViewController.xib */; };
+		272481E9175F4D9E00358AAF /* CondLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D4A6D8175E13BC002CDBEC /* CondLabel.m */; };
+		272481EA175F4DA200358AAF /* SemiBoldLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D4A6D6175E1333002CDBEC /* SemiBoldLabel.m */; };
+		272481EB175F4DC100358AAF /* MyriadPro-Cond.otf in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6D9175E13BC002CDBEC /* MyriadPro-Cond.otf */; };
+		272481EC175F4DC300358AAF /* MyriadPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A6D4175E1333002CDBEC /* MyriadPro-Semibold.otf */; };
 		277D8F25175A09A60032187B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D8F24175A09A60032187B /* UIKit.framework */; };
 		277D8F27175A09A60032187B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D8F26175A09A60032187B /* Foundation.framework */; };
 		277D8F29175A09A60032187B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D8F28175A09A60032187B /* CoreGraphics.framework */; };
@@ -405,6 +409,8 @@
 				27D4A72E175E339F002CDBEC /* status_whiteBackground@2x.png in Resources */,
 				272481E1175E681300358AAF /* Page1ForScrollViewController.xib in Resources */,
 				272481E8175E707300358AAF /* Page2ForScrollViewController.xib in Resources */,
+				272481EB175F4DC100358AAF /* MyriadPro-Cond.otf in Resources */,
+				272481EC175F4DC300358AAF /* MyriadPro-Semibold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +433,8 @@
 				272481DC175E48CA00358AAF /* CustomPageControl.m in Sources */,
 				272481E0175E681300358AAF /* Page1ForScrollViewController.m in Sources */,
 				272481E7175E706B00358AAF /* Page2ForScrollViewController.m in Sources */,
+				272481E9175F4D9E00358AAF /* CondLabel.m in Sources */,
+				272481EA175F4DA200358AAF /* SemiBoldLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
