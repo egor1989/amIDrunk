@@ -40,9 +40,72 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="YRR-MM-Izd">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="341" id="AOt-dA-d8j"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="62S-9O-XvB">
+                                        <rect key="frame" x="0.0" y="22" width="280" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="280" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="4.300 ‰" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWk-yy-gqX" customClass="BoldCondLabel">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="102" id="CXE-3j-RSh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.50980392159999999" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ресторан &quot;Макдональдс&quot;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49p-Xg-KgT" customClass="RegularLabel">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="159" id="fi3-xk-kBK"/>
+                                                        <constraint firstAttribute="height" constant="21" id="nOo-P5-awm"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="01 января 2013" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfn-RM-qmu" customClass="RegularLabel">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="116" id="CEX-58-Nik"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="18:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGz-Ap-HIT" customClass="RegularLabel">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="wfn-RM-qmu" firstAttribute="top" secondItem="62S-9O-XvB" secondAttribute="top" constant="6" id="3ab-zo-6kn"/>
+                                            <constraint firstItem="wfn-RM-qmu" firstAttribute="bottom" secondItem="wWk-yy-gqX" secondAttribute="bottom" type="default" id="9aH-dl-4qY"/>
+                                            <constraint firstItem="sGz-Ap-HIT" firstAttribute="leading" secondItem="wfn-RM-qmu" secondAttribute="leading" type="default" id="Ckl-V9-R5r"/>
+                                            <constraint firstAttribute="trailing" secondItem="wfn-RM-qmu" secondAttribute="trailing" constant="12" id="Hik-Ix-Pg5"/>
+                                            <constraint firstItem="sGz-Ap-HIT" firstAttribute="trailing" secondItem="wfn-RM-qmu" secondAttribute="trailing" type="default" id="UpM-UQ-Duh"/>
+                                            <constraint firstItem="wWk-yy-gqX" firstAttribute="leading" secondItem="62S-9O-XvB" secondAttribute="leading" constant="20" type="default" id="kAD-f6-BiJ"/>
+                                            <constraint firstItem="sGz-Ap-HIT" firstAttribute="top" secondItem="49p-Xg-KgT" secondAttribute="top" type="default" id="ksh-p6-FWm"/>
+                                            <constraint firstItem="49p-Xg-KgT" firstAttribute="leading" secondItem="62S-9O-XvB" secondAttribute="leading" constant="20" type="default" id="ojl-1R-eDS"/>
+                                            <constraint firstItem="wfn-RM-qmu" firstAttribute="top" secondItem="wWk-yy-gqX" secondAttribute="top" type="default" id="rH6-K4-jeh"/>
+                                            <constraint firstItem="49p-Xg-KgT" firstAttribute="top" secondItem="62S-9O-XvB" secondAttribute="top" constant="29" id="uAY-vN-mmR"/>
+                                            <constraint firstItem="sGz-Ap-HIT" firstAttribute="baseline" secondItem="49p-Xg-KgT" secondAttribute="baseline" type="default" id="zuy-Ah-cgx"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="YRR-MM-Izd" firstAttribute="top" secondItem="16" secondAttribute="top" constant="125" id="3EE-cn-2w2"/>
                             <constraint firstItem="U3i-2A-BDs" firstAttribute="top" secondItem="16" secondAttribute="top" constant="13" id="9d3-XH-gr9"/>
                             <constraint firstItem="ucG-V5-0Qz" firstAttribute="centerX" secondItem="U3i-2A-BDs" secondAttribute="centerX" type="default" id="G6x-BX-G8M"/>
                             <constraint firstItem="Avf-J7-x6z" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="X1F-6N-LAm"/>
@@ -53,7 +116,9 @@
                             <constraint firstAttribute="trailing" secondItem="Mro-ur-sQU" secondAttribute="trailing" constant="14" id="mus-Ay-MiF"/>
                             <constraint firstItem="Avf-J7-x6z" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" type="default" id="nnw-9g-wiE"/>
                             <constraint firstItem="Mro-ur-sQU" firstAttribute="centerY" secondItem="ucG-V5-0Qz" secondAttribute="centerY" type="default" id="nu4-ba-pQ7"/>
+                            <constraint firstItem="YRR-MM-Izd" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="pQJ-Kh-Hym"/>
                             <constraint firstItem="ucG-V5-0Qz" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="xvS-Id-Z6q"/>
+                            <constraint firstAttribute="trailing" secondItem="YRR-MM-Izd" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ykh-An-afc"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="7"/>
@@ -296,6 +361,45 @@
         <image name="status_settingsButton@2x.png" width="58" height="60"/>
         <image name="status_whiteBackground@2x.png" width="592" height="490"/>
     </resources>
+    <classes>
+        <class className="BoldCondLabel" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BoldCondLabel.h"/>
+        </class>
+        <class className="CentralViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CentralViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="progressView" candidateClass="ProgressViewWithOffset"/>
+            </relationships>
+        </class>
+        <class className="CondLabel" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CondLabel.h"/>
+        </class>
+        <class className="CustomPageControl" superclassName="UIPageControl">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomPageControl.h"/>
+        </class>
+        <class className="HistoryViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HistoryViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ProgressViewWithOffset" superclassName="UIProgressView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProgressViewWithOffset.h"/>
+        </class>
+        <class className="RegularLabel" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RegularLabel.h"/>
+        </class>
+        <class className="SemiBoldLabel" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SemiBoldLabel.h"/>
+        </class>
+        <class className="StatusViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StatusViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="pageControl" candidateClass="CustomPageControl"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

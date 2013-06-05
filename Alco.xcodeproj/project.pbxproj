@@ -27,6 +27,8 @@
 		27248227175F745600358AAF /* SVSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 27248224175F745600358AAF /* SVSegmentedControl.m */; };
 		27248228175F745600358AAF /* SVSegmentedThumb.m in Sources */ = {isa = PBXBuildFile; fileRef = 27248226175F745600358AAF /* SVSegmentedThumb.m */; };
 		2724822A175F774C00358AAF /* history_switchActiveBackgroundOpacity@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27248229175F774C00358AAF /* history_switchActiveBackgroundOpacity@2x.png */; };
+		2724822E175F922100358AAF /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2724822B175F922000358AAF /* MyriadPro-Regular.otf */; };
+		2724822F175F922100358AAF /* RegularLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724822D175F922100358AAF /* RegularLabel.m */; };
 		277D8F25175A09A60032187B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D8F24175A09A60032187B /* UIKit.framework */; };
 		277D8F27175A09A60032187B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D8F26175A09A60032187B /* Foundation.framework */; };
 		277D8F29175A09A60032187B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D8F28175A09A60032187B /* CoreGraphics.framework */; };
@@ -90,6 +92,9 @@
 		27248225175F745600358AAF /* SVSegmentedThumb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVSegmentedThumb.h; sourceTree = "<group>"; };
 		27248226175F745600358AAF /* SVSegmentedThumb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVSegmentedThumb.m; sourceTree = "<group>"; };
 		27248229175F774C00358AAF /* history_switchActiveBackgroundOpacity@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "history_switchActiveBackgroundOpacity@2x.png"; sourceTree = "<group>"; };
+		2724822B175F922000358AAF /* MyriadPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.otf"; sourceTree = "<group>"; };
+		2724822C175F922000358AAF /* RegularLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegularLabel.h; sourceTree = "<group>"; };
+		2724822D175F922100358AAF /* RegularLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegularLabel.m; sourceTree = "<group>"; };
 		277D8F21175A09A60032187B /* Alco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		277D8F24175A09A60032187B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		277D8F26175A09A60032187B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -301,6 +306,9 @@
 		277D8F88175A50F30032187B /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				2724822B175F922000358AAF /* MyriadPro-Regular.otf */,
+				2724822C175F922000358AAF /* RegularLabel.h */,
+				2724822D175F922100358AAF /* RegularLabel.m */,
 				27D4A6D7175E13BC002CDBEC /* CondLabel.h */,
 				27D4A6D8175E13BC002CDBEC /* CondLabel.m */,
 				27D4A6D9175E13BC002CDBEC /* MyriadPro-Cond.otf */,
@@ -453,6 +461,7 @@
 				2724821C175F60B700358AAF /* history_switchActiveBackground@2x.png in Resources */,
 				2724821D175F60B700358AAF /* history_switchBackground@2x.png in Resources */,
 				2724822A175F774C00358AAF /* history_switchActiveBackgroundOpacity@2x.png in Resources */,
+				2724822E175F922100358AAF /* MyriadPro-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +488,7 @@
 				27248211175F5A2000358AAF /* StatusViewController.m in Sources */,
 				27248227175F745600358AAF /* SVSegmentedControl.m in Sources */,
 				27248228175F745600358AAF /* SVSegmentedThumb.m in Sources */,
+				2724822F175F922100358AAF /* RegularLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,6 +29,7 @@
 		<string>MyriadPro-BoldCond.otf</string>
 		<string>MyriadPro-Semibold.otf</string>
 		<string>MyriadPro-Cond.otf</string>
+		<string>MyriadPro-Regular.otf</string>
 	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>MainStoryboard</string>
