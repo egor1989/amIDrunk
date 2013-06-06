@@ -112,17 +112,25 @@
                                     <outlet property="delegate" destination="2" id="kSP-oL-WSt"/>
                                 </connections>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" image="history_plot@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="m1Z-p9-aTN">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="251" id="zTP-42-Gxw"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="U3i-2A-BDs" firstAttribute="top" secondItem="16" secondAttribute="top" constant="13" id="9d3-XH-gr9"/>
                             <constraint firstItem="ucG-V5-0Qz" firstAttribute="centerX" secondItem="U3i-2A-BDs" secondAttribute="centerX" type="default" id="G6x-BX-G8M"/>
+                            <constraint firstItem="m1Z-p9-aTN" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="Sez-R3-MEu"/>
                             <constraint firstItem="Avf-J7-x6z" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="X1F-6N-LAm"/>
+                            <constraint firstItem="m1Z-p9-aTN" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="bOx-WG-Qsc"/>
                             <constraint firstItem="Avf-J7-x6z" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="dZf-BH-1zK"/>
                             <constraint firstItem="YRR-MM-Izd" firstAttribute="top" secondItem="16" secondAttribute="top" constant="113" id="fWg-5t-gOL"/>
                             <constraint firstItem="ucG-V5-0Qz" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="gf7-qd-cAq"/>
                             <constraint firstItem="Avf-J7-x6z" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="jof-7a-LHq"/>
                             <constraint firstItem="ucG-V5-0Qz" firstAttribute="top" secondItem="16" secondAttribute="top" constant="-1" id="kCF-CJ-PqR"/>
+                            <constraint firstItem="m1Z-p9-aTN" firstAttribute="top" secondItem="16" secondAttribute="top" constant="159" id="lga-wH-5Dg"/>
                             <constraint firstAttribute="trailing" secondItem="Mro-ur-sQU" secondAttribute="trailing" constant="14" id="mus-Ay-MiF"/>
                             <constraint firstItem="Avf-J7-x6z" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" type="default" id="nnw-9g-wiE"/>
                             <constraint firstItem="Mro-ur-sQU" firstAttribute="centerY" secondItem="ucG-V5-0Qz" secondAttribute="centerY" type="default" id="nu4-ba-pQ7"/>
@@ -133,7 +141,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="7"/>
                     <connections>
-                        <outlet property="tableViewGlobal2" destination="YRR-MM-Izd" id="4uk-yq-rEX"/>
+                        <outlet property="plotImg" destination="m1Z-p9-aTN" id="flr-xg-hgN"/>
+                        <outlet property="tableView2" destination="YRR-MM-Izd" id="hkU-gi-kBr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
@@ -369,11 +378,64 @@
     <resources>
         <image name="background5.jpg" width="640" height="1136"/>
         <image name="central_redCircle.png" width="16" height="16"/>
+        <image name="history_plot@2x.png" width="640" height="503"/>
         <image name="navBar.png" width="640" height="92"/>
         <image name="status_rememberButtonUnselected@2x.png" width="214" height="55"/>
         <image name="status_settingsButton@2x.png" width="58" height="60"/>
         <image name="status_whiteBackground@2x.png" width="592" height="490"/>
     </resources>
+    <classes>
+        <class className="BoldCondLabel" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BoldCondLabel.h"/>
+        </class>
+        <class className="CentralViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CentralViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="progressView" candidateClass="ProgressViewWithOffset"/>
+            </relationships>
+        </class>
+        <class className="CondLabel" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CondLabel.h"/>
+        </class>
+        <class className="CustomPageControl" superclassName="UIPageControl">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomPageControl.h"/>
+        </class>
+        <class className="HistoryCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HistoryCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="date" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="place" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="promille" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="time" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="HistoryViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HistoryViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="plotImg" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="tableView2" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ProgressViewWithOffset" superclassName="UIProgressView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProgressViewWithOffset.h"/>
+        </class>
+        <class className="RegularLabel" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RegularLabel.h"/>
+        </class>
+        <class className="SemiBoldLabel" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SemiBoldLabel.h"/>
+        </class>
+        <class className="StatusViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StatusViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="pageControl" candidateClass="CustomPageControl"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

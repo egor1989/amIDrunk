@@ -30,6 +30,11 @@
 		2724822E175F922100358AAF /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2724822B175F922000358AAF /* MyriadPro-Regular.otf */; };
 		2724822F175F922100358AAF /* RegularLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724822D175F922100358AAF /* RegularLabel.m */; };
 		27248232175FECFE00358AAF /* HistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27248231175FECFE00358AAF /* HistoryCell.m */; };
+		2724823517607F2200358AAF /* history_plot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2724823417607F2200358AAF /* history_plot@2x.png */; };
+		272482371760EE4800358AAF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272482361760EE4700358AAF /* CoreData.framework */; };
+		2724823A1760EE8A00358AAF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 272482381760EE8A00358AAF /* Model.xcdatamodeld */; };
+		2724823D1760F01D00358AAF /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724823C1760F01C00358AAF /* Data.m */; };
+		2724824117611B7A00358AAF /* NSManagedObjectContext+insert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724824017611B7A00358AAF /* NSManagedObjectContext+insert.m */; };
 		277D8F25175A09A60032187B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D8F24175A09A60032187B /* UIKit.framework */; };
 		277D8F27175A09A60032187B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D8F26175A09A60032187B /* Foundation.framework */; };
 		277D8F29175A09A60032187B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D8F28175A09A60032187B /* CoreGraphics.framework */; };
@@ -98,6 +103,13 @@
 		2724822D175F922100358AAF /* RegularLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegularLabel.m; sourceTree = "<group>"; };
 		27248230175FECFE00358AAF /* HistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryCell.h; sourceTree = "<group>"; };
 		27248231175FECFE00358AAF /* HistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryCell.m; sourceTree = "<group>"; };
+		2724823417607F2200358AAF /* history_plot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "history_plot@2x.png"; sourceTree = "<group>"; };
+		272482361760EE4700358AAF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		272482391760EE8A00358AAF /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		2724823B1760F01C00358AAF /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		2724823C1760F01C00358AAF /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
+		2724823F17611B7A00358AAF /* NSManagedObjectContext+insert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+insert.h"; sourceTree = "<group>"; };
+		2724824017611B7A00358AAF /* NSManagedObjectContext+insert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+insert.m"; sourceTree = "<group>"; };
 		277D8F21175A09A60032187B /* Alco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		277D8F24175A09A60032187B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		277D8F26175A09A60032187B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -151,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				272482371760EE4800358AAF /* CoreData.framework in Frameworks */,
 				2724821F175F70CA00358AAF /* QuartzCore.framework in Frameworks */,
 				277D8F25175A09A60032187B /* UIKit.framework in Frameworks */,
 				277D8F27175A09A60032187B /* Foundation.framework in Frameworks */,
@@ -164,6 +177,7 @@
 		272481EF175F5A1F00358AAF /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				2724823E1760F02700358AAF /* database */,
 				277D8F3C175A09A60032187B /* MainStoryboard.storyboard */,
 				272481F0175F5A1F00358AAF /* AppDelegate.h */,
 				272481F1175F5A1F00358AAF /* AppDelegate.m */,
@@ -227,6 +241,7 @@
 		27248219175F60B700358AAF /* history */ = {
 			isa = PBXGroup;
 			children = (
+				2724823417607F2200358AAF /* history_plot@2x.png */,
 				2724821A175F60B700358AAF /* history_switchActiveBackground@2x.png */,
 				2724821B175F60B700358AAF /* history_switchBackground@2x.png */,
 				27248229175F774C00358AAF /* history_switchActiveBackgroundOpacity@2x.png */,
@@ -234,9 +249,22 @@
 			path = history;
 			sourceTree = "<group>";
 		};
+		2724823E1760F02700358AAF /* database */ = {
+			isa = PBXGroup;
+			children = (
+				272482381760EE8A00358AAF /* Model.xcdatamodeld */,
+				2724823B1760F01C00358AAF /* Data.h */,
+				2724823C1760F01C00358AAF /* Data.m */,
+				2724823F17611B7A00358AAF /* NSManagedObjectContext+insert.h */,
+				2724824017611B7A00358AAF /* NSManagedObjectContext+insert.m */,
+			);
+			name = database;
+			sourceTree = "<group>";
+		};
 		277D8F18175A09A60032187B = {
 			isa = PBXGroup;
 			children = (
+				272482361760EE4700358AAF /* CoreData.framework */,
 				2724821E175F70CA00358AAF /* QuartzCore.framework */,
 				277D8F2A175A09A60032187B /* Alco */,
 				277D8F23175A09A60032187B /* Frameworks */,
@@ -467,6 +495,7 @@
 				2724821D175F60B700358AAF /* history_switchBackground@2x.png in Resources */,
 				2724822A175F774C00358AAF /* history_switchActiveBackgroundOpacity@2x.png in Resources */,
 				2724822E175F922100358AAF /* MyriadPro-Regular.otf in Resources */,
+				2724823517607F2200358AAF /* history_plot@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +524,9 @@
 				27248228175F745600358AAF /* SVSegmentedThumb.m in Sources */,
 				2724822F175F922100358AAF /* RegularLabel.m in Sources */,
 				27248232175FECFE00358AAF /* HistoryCell.m in Sources */,
+				2724823A1760EE8A00358AAF /* Model.xcdatamodeld in Sources */,
+				2724823D1760F01D00358AAF /* Data.m in Sources */,
+				2724824117611B7A00358AAF /* NSManagedObjectContext+insert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,6 +653,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		272482381760EE8A00358AAF /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				272482391760EE8A00358AAF /* Model.xcdatamodel */,
+			);
+			currentVersion = 272482391760EE8A00358AAF /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 277D8F19175A09A60032187B /* Project object */;
 }

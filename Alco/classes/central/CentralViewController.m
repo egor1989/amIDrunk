@@ -21,7 +21,9 @@
 	_progressView.progressImage = [[UIImage imageNamed:@"central_redSliderForeground"] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 16, 10, 16) ];
 	[_progressView setProgress:0.8 animated:YES];
 	[self.view addSubview:_progressView];
-
+	
+	
+	
 }
 
 - (void)didReceiveMemoryWarning

@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "ProgressViewWithOffset.h"
+#import "Data.h"
+#import "NSManagedObjectContext+insert.h"
 
 @interface CentralViewController : UIViewController
 @property IBOutlet ProgressViewWithOffset *progressView;
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
 @end
