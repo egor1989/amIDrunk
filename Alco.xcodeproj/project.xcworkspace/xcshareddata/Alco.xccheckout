@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2B133CD5-A1B9-4EE5-A959-3973CF0F2261</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Alco</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>04ACA1B9-4D0D-4A90-94D8-7F334D37B039</key>
+		<string>ssh://github.com/egor1989/amIDrunk.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Alco.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>04ACA1B9-4D0D-4A90-94D8-7F334D37B039</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/egor1989/amIDrunk.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>04ACA1B9-4D0D-4A90-94D8-7F334D37B039</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>04ACA1B9-4D0D-4A90-94D8-7F334D37B039</string>
+			<key>IDESourceControlWCCName</key>
+			<string>amIDrunk</string>
+		</dict>
+	</array>
+</dict>
+</plist>

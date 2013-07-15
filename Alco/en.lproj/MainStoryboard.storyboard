@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C2034" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
     <dependencies>
+        <development version="4600" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
@@ -28,11 +29,10 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mro-ur-sQU">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="M35-ab-06Z"/>
                                     <constraint firstAttribute="width" constant="29" id="hfW-6I-Ufd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="settings" image="status_settingsButton@2x.png">
+                                <state key="normal" title="settings" image="status_settingsButton.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -112,11 +112,7 @@
                                     <outlet property="delegate" destination="2" id="kSP-oL-WSt"/>
                                 </connections>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" image="history_plot@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="m1Z-p9-aTN">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="251" id="zTP-42-Gxw"/>
-                                </constraints>
-                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" image="history_plot.png" translatesAutoresizingMaskIntoConstraints="NO" id="m1Z-p9-aTN"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -124,7 +120,6 @@
                             <constraint firstItem="ucG-V5-0Qz" firstAttribute="centerX" secondItem="U3i-2A-BDs" secondAttribute="centerX" type="default" id="G6x-BX-G8M"/>
                             <constraint firstItem="m1Z-p9-aTN" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="Sez-R3-MEu"/>
                             <constraint firstItem="Avf-J7-x6z" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="X1F-6N-LAm"/>
-                            <constraint firstItem="m1Z-p9-aTN" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="bOx-WG-Qsc"/>
                             <constraint firstItem="Avf-J7-x6z" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="dZf-BH-1zK"/>
                             <constraint firstItem="YRR-MM-Izd" firstAttribute="top" secondItem="16" secondAttribute="top" constant="113" id="fWg-5t-gOL"/>
                             <constraint firstItem="ucG-V5-0Qz" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="gf7-qd-cAq"/>
@@ -158,11 +153,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="j6e-EQ-pim"/>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="central_redCircle.png" translatesAutoresizingMaskIntoConstraints="NO" id="zrb-qF-yUX">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="392" id="LgL-Rb-wpY"/>
-                                </constraints>
-                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="central_redCircle.png" translatesAutoresizingMaskIntoConstraints="NO" id="zrb-qF-yUX"/>
                             <progressView opaque="NO" contentMode="scaleToFill" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="r3r-0q-dd4" customClass="ProgressViewWithOffset">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="xag-yd-YGK"/>
@@ -186,15 +177,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="8ru-g1-M5a" firstAttribute="centerX" secondItem="r3r-0q-dd4" secondAttribute="centerX" type="default" id="1vd-cb-Hwm"/>
                             <constraint firstItem="j6e-EQ-pim" firstAttribute="top" secondItem="17" secondAttribute="top" type="default" id="4x9-3p-94g"/>
+                            <constraint firstItem="r3r-0q-dd4" firstAttribute="centerX" secondItem="17" secondAttribute="centerX" type="default" id="A4w-vh-RNN"/>
                             <constraint firstItem="8ru-g1-M5a" firstAttribute="centerX" secondItem="U37-WV-tOl" secondAttribute="centerX" type="default" id="G0U-m2-5ru"/>
                             <constraint firstItem="j6e-EQ-pim" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="G9P-tG-xws"/>
                             <constraint firstItem="zrb-qF-yUX" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="Ga9-Jf-YxI"/>
-                            <constraint firstItem="zrb-qF-yUX" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="I70-Bt-pjI"/>
-                            <constraint firstItem="U37-WV-tOl" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="Q6R-6U-mxV"/>
-                            <constraint firstItem="8ru-g1-M5a" firstAttribute="centerX" secondItem="r3r-0q-dd4" secondAttribute="centerX" type="default" id="Ria-kT-ipI"/>
+                            <constraint firstItem="j6e-EQ-pim" firstAttribute="trailing" secondItem="U37-WV-tOl" secondAttribute="trailing" type="default" id="KKC-I6-fRS"/>
                             <constraint firstItem="U37-WV-tOl" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="X6n-D2-8ef"/>
-                            <constraint firstItem="j6e-EQ-pim" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="YYv-ul-sPU"/>
                             <constraint firstItem="r3r-0q-dd4" firstAttribute="top" secondItem="17" secondAttribute="top" constant="227" id="gBm-q4-5rT"/>
                             <constraint firstItem="zrb-qF-yUX" firstAttribute="top" secondItem="17" secondAttribute="top" type="default" id="lgm-xa-zDl"/>
                             <constraint firstItem="U37-WV-tOl" firstAttribute="top" secondItem="17" secondAttribute="top" constant="-1" id="mnh-Ov-cfW"/>
@@ -228,7 +218,6 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Состояние" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekR-4K-TNm" customClass="BoldCondLabel">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="199" id="IaK-Z9-SU0"/>
-                                    <constraint firstAttribute="height" constant="27" id="OPK-8z-0Hd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -236,7 +225,6 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Дмитрий" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHt-77-Ex9" customClass="SemiBoldLabel">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="26" id="TXM-3O-Csa"/>
                                     <constraint firstAttribute="width" constant="209" id="zsS-E3-q1h"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -252,7 +240,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="status_whiteBackground@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="nh7-MV-SZ6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="status_whiteBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="nh7-MV-SZ6">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="241" id="5f6-TC-vzN"/>
                                     <constraint firstAttribute="width" constant="292" id="cnZ-J6-PT9"/>
@@ -278,11 +266,10 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zzu-fN-Hd4">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="SLF-Qm-frO"/>
                                     <constraint firstAttribute="width" constant="29" id="TCl-Qw-0Pv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="settings" image="status_settingsButton@2x.png">
+                                <state key="normal" title="settings" image="status_settingsButton.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -293,10 +280,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b51-Hl-Ttl">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="107" id="1Da-Ao-qN1"/>
-                                    <constraint firstAttribute="height" constant="27" id="G1Y-xs-k7a"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="remember" image="status_rememberButtonUnselected@2x.png">
+                                <state key="normal" title="remember" image="status_rememberButtonUnselected.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -377,12 +363,12 @@
     </scenes>
     <resources>
         <image name="background5.jpg" width="640" height="1136"/>
-        <image name="central_redCircle.png" width="16" height="16"/>
-        <image name="history_plot@2x.png" width="640" height="503"/>
+        <image name="central_redCircle.png" width="320" height="392.5"/>
+        <image name="history_plot.png" width="320" height="251.5"/>
         <image name="navBar.png" width="640" height="92"/>
-        <image name="status_rememberButtonUnselected@2x.png" width="214" height="55"/>
-        <image name="status_settingsButton@2x.png" width="58" height="60"/>
-        <image name="status_whiteBackground@2x.png" width="592" height="490"/>
+        <image name="status_rememberButtonUnselected.png" width="107" height="27.5"/>
+        <image name="status_settingsButton.png" width="29" height="30"/>
+        <image name="status_whiteBackground.png" width="296" height="245"/>
     </resources>
     <classes>
         <class className="BoldCondLabel" superclassName="UILabel">

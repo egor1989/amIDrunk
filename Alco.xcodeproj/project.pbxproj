@@ -35,6 +35,13 @@
 		2724823A1760EE8A00358AAF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 272482381760EE8A00358AAF /* Model.xcdatamodeld */; };
 		2724823D1760F01D00358AAF /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724823C1760F01C00358AAF /* Data.m */; };
 		2724824117611B7A00358AAF /* NSManagedObjectContext+insert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724824017611B7A00358AAF /* NSManagedObjectContext+insert.m */; };
+		2746E734179173C60066449A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2746E733179173C60066449A /* CoreBluetooth.framework */; };
+		2746E737179180260066449A /* BLECommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = 2746E736179180260066449A /* BLECommunication.m */; };
+		2746E73F17932A650066449A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2746E73E17932A650066449A /* SenTestingKit.framework */; };
+		2746E74017932A650066449A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D8F24175A09A60032187B /* UIKit.framework */; };
+		2746E74117932A650066449A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D8F26175A09A60032187B /* Foundation.framework */; };
+		2746E74717932A650066449A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2746E74517932A650066449A /* InfoPlist.strings */; };
+		2746E74A17932A650066449A /* UnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2746E74917932A650066449A /* UnitTest.m */; };
 		277D8F25175A09A60032187B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D8F24175A09A60032187B /* UIKit.framework */; };
 		277D8F27175A09A60032187B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D8F26175A09A60032187B /* Foundation.framework */; };
 		277D8F29175A09A60032187B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D8F28175A09A60032187B /* CoreGraphics.framework */; };
@@ -70,6 +77,16 @@
 		27D4A72D175E339F002CDBEC /* status_settingsButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A718175E339F002CDBEC /* status_settingsButton@2x.png */; };
 		27D4A72E175E339F002CDBEC /* status_whiteBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27D4A719175E339F002CDBEC /* status_whiteBackground@2x.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2746E74F17932A770066449A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 277D8F19175A09A60032187B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 277D8F20175A09A60032187B;
+			remoteInfo = Alco;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		272481F0175F5A1F00358AAF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +127,16 @@
 		2724823C1760F01C00358AAF /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
 		2724823F17611B7A00358AAF /* NSManagedObjectContext+insert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+insert.h"; sourceTree = "<group>"; };
 		2724824017611B7A00358AAF /* NSManagedObjectContext+insert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+insert.m"; sourceTree = "<group>"; };
+		2746E733179173C60066449A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		2746E735179180260066449A /* BLECommunication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLECommunication.h; path = Alco/classes/BLECommunication.h; sourceTree = SOURCE_ROOT; };
+		2746E736179180260066449A /* BLECommunication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLECommunication.m; path = Alco/classes/BLECommunication.m; sourceTree = SOURCE_ROOT; };
+		2746E73D17932A640066449A /* UnitTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2746E73E17932A650066449A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2746E74417932A650066449A /* UnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTest-Info.plist"; sourceTree = "<group>"; };
+		2746E74617932A650066449A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2746E74817932A650066449A /* UnitTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitTest.h; sourceTree = "<group>"; };
+		2746E74917932A650066449A /* UnitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTest.m; sourceTree = "<group>"; };
+		2746E74B17932A650066449A /* UnitTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTest-Prefix.pch"; sourceTree = "<group>"; };
 		277D8F21175A09A60032187B /* Alco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		277D8F24175A09A60032187B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		277D8F26175A09A60032187B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -159,10 +186,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2746E73917932A640066449A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2746E73F17932A650066449A /* SenTestingKit.framework in Frameworks */,
+				2746E74017932A650066449A /* UIKit.framework in Frameworks */,
+				2746E74117932A650066449A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		277D8F1E175A09A60032187B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2746E734179173C60066449A /* CoreBluetooth.framework in Frameworks */,
 				272482371760EE4800358AAF /* CoreData.framework in Frameworks */,
 				2724821F175F70CA00358AAF /* QuartzCore.framework in Frameworks */,
 				277D8F25175A09A60032187B /* UIKit.framework in Frameworks */,
@@ -191,6 +229,8 @@
 		272481F2175F5A1F00358AAF /* central */ = {
 			isa = PBXGroup;
 			children = (
+				2746E735179180260066449A /* BLECommunication.h */,
+				2746E736179180260066449A /* BLECommunication.m */,
 				272481F3175F5A1F00358AAF /* CentralViewController.h */,
 				272481F4175F5A1F00358AAF /* CentralViewController.m */,
 			);
@@ -261,12 +301,31 @@
 			name = database;
 			sourceTree = "<group>";
 		};
+		2746E74217932A650066449A /* UnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				2746E74817932A650066449A /* UnitTest.h */,
+				2746E74917932A650066449A /* UnitTest.m */,
+				2746E74317932A650066449A /* Supporting Files */,
+			);
+			path = UnitTest;
+			sourceTree = "<group>";
+		};
+		2746E74317932A650066449A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2746E74417932A650066449A /* UnitTest-Info.plist */,
+				2746E74517932A650066449A /* InfoPlist.strings */,
+				2746E74B17932A650066449A /* UnitTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		277D8F18175A09A60032187B = {
 			isa = PBXGroup;
 			children = (
-				272482361760EE4700358AAF /* CoreData.framework */,
-				2724821E175F70CA00358AAF /* QuartzCore.framework */,
 				277D8F2A175A09A60032187B /* Alco */,
+				2746E74217932A650066449A /* UnitTest */,
 				277D8F23175A09A60032187B /* Frameworks */,
 				277D8F22175A09A60032187B /* Products */,
 			);
@@ -276,6 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				277D8F21175A09A60032187B /* Alco.app */,
+				2746E73D17932A640066449A /* UnitTest.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -283,9 +343,13 @@
 		277D8F23175A09A60032187B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2746E733179173C60066449A /* CoreBluetooth.framework */,
+				272482361760EE4700358AAF /* CoreData.framework */,
+				2724821E175F70CA00358AAF /* QuartzCore.framework */,
 				277D8F24175A09A60032187B /* UIKit.framework */,
 				277D8F26175A09A60032187B /* Foundation.framework */,
 				277D8F28175A09A60032187B /* CoreGraphics.framework */,
+				2746E73E17932A650066449A /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -412,6 +476,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2746E73C17932A640066449A /* UnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2746E74C17932A650066449A /* Build configuration list for PBXNativeTarget "UnitTest" */;
+			buildPhases = (
+				2746E73817932A640066449A /* Sources */,
+				2746E73917932A640066449A /* Frameworks */,
+				2746E73A17932A640066449A /* Resources */,
+				2746E73B17932A640066449A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2746E75017932A770066449A /* PBXTargetDependency */,
+			);
+			name = UnitTest;
+			productName = UnitTest;
+			productReference = 2746E73D17932A640066449A /* UnitTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		277D8F20175A09A60032187B /* Alco */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 277D8F4F175A09A60032187B /* Build configuration list for PBXNativeTarget "Alco" */;
@@ -451,11 +534,20 @@
 			projectRoot = "";
 			targets = (
 				277D8F20175A09A60032187B /* Alco */,
+				2746E73C17932A640066449A /* UnitTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2746E73A17932A640066449A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2746E74717932A650066449A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		277D8F1F175A09A60032187B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -501,7 +593,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2746E73B17932A640066449A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		2746E73817932A640066449A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2746E74A17932A650066449A /* UnitTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		277D8F1D175A09A60032187B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -527,12 +643,29 @@
 				2724823A1760EE8A00358AAF /* Model.xcdatamodeld in Sources */,
 				2724823D1760F01D00358AAF /* Data.m in Sources */,
 				2724824117611B7A00358AAF /* NSManagedObjectContext+insert.m in Sources */,
+				2746E737179180260066449A /* BLECommunication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2746E75017932A770066449A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 277D8F20175A09A60032187B /* Alco */;
+			targetProxy = 2746E74F17932A770066449A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		2746E74517932A650066449A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2746E74617932A650066449A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		277D8F2D175A09A60032187B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -553,6 +686,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2746E74D17932A650066449A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Alco.app/Alco";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTest/UnitTest-Prefix.pch";
+				INFOPLIST_FILE = "UnitTest/UnitTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)\n";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2746E74E17932A650066449A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Alco.app/Alco";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTest/UnitTest-Prefix.pch";
+				INFOPLIST_FILE = "UnitTest/UnitTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)\n";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		277D8F4D175A09A60032187B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -614,6 +781,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Alco/Alco-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "Alco/Alco-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -625,6 +793,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Alco/Alco-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "Alco/Alco-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -634,6 +803,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2746E74C17932A650066449A /* Build configuration list for PBXNativeTarget "UnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2746E74D17932A650066449A /* Debug */,
+				2746E74E17932A650066449A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		277D8F1C175A09A60032187B /* Build configuration list for PBXProject "Alco" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
